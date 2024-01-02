@@ -1,0 +1,57 @@
+xev <= Keysym
+alsamixer <= alsa 
+xprop <= window propertites
+cmatrix <= green show like hackers
+	s-tui
+pkill => killall (alt)
+	pgrep [process] to show PID
+	ln -s { /etc/sv/[service] } /var/service
+	wpa_cli -> select_network [number], scan , scan_result
+	man pipe
+	diff -u [original] [copy] > [file].diff
+kill -10 $(pidof firefox)  
+	ps -ef | grep 
+	ps aux 
+	tar -xf 
+	doas xbps-query -m <= list the installed packages
+	.!bash <= in vim prompt
+	[H,M,L] head of the page, middle,end 
+
+	to delete everything in container use [ d + i + [container] ]
+	- ex.
+	-- "hi this is me " to delete every thing inside " " press [ d + i + " ]
+
+	to go to normal mode and return back to insert press [ ctrl + o ]
+
+	awk command
+	- awk 'print $1' [file]
+	- awk '/find/ {print}' [file]
+	- awk -F'point' '{print $0}' [file]
+	- awk '$3="thing" ; {print $0}'
+	- awk '{print $NF}'
+  - awk 'BEGIN{FS=":"; OFS="-----"} {print $1,$2,$3}' /etc/passwd
+  - awk -F /  {print $NF} /etc/shells
+	- df | awk '/\/dev\// {print $1}'
+
+	packages i downloaded in /usr/share
+
+	/etc/shells <-
+
+df <- report system file
+
+vim:
+ - ctrl + w <= move between two panels on vim
+ - ctrl + w + n <= open new terminal  
+
+ mpv command
+
+ ncmpcpp
+
+ to reconfig alsa
+ doas alsactl init
+
+
+ sudo !! 
+ - !! <- refers to the last command
+
+ xset s off
