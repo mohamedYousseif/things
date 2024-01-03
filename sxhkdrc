@@ -1,0 +1,20 @@
+alt + w
+	firefox
+alt + z
+	zathura
+alt + equal
+	amixer sset Master 5%+
+alt + minus
+	amixer sset Master 5%-
+alt + a
+	st bash scripts/bins.sh
+alt + t
+	flatpak run org.telegram.desktop
+super + p
+	mpv $(xclip -o)
+Print
+	maim -u -i $(xdotool getactivewindow) | xclip -selection clipboard -t /image/png
+ctrl + Print
+	maim -s | xclip -selection clipboard -t /image/png
+alt + Print
+	maim | xclip -selection clipboard -t /image/png
